@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  @keyframes shake{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(5%);
+    }
+   
+    100%{
+        transform: translateY(0%);
+    }
+  } 
+
+  body {
+    background: url("./img/bg.png") no-repeat;
+    background-size: cover;
+    padding: 3rem 5rem;
+  }
+  
+  /*48px = 3rem // 80px = 5rem  */
+  main {
+    width: 100%;
+    height: calc(100vh - 6rem);
+    background: linear-gradient(0deg, #1a2841 0%, #0b1322 100%, #080a0e 100%);
+    border-radius: 5px;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  #logo {
+    width: 180px;
+  }
+  
+  nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #f00;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: color 1s;
+    cursor: pointer;
+  }
+  
+  nav a:hover {
+    color: rgb(135, 2, 2);
+  }
+  
+  header,
+  header div {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  header {
+    justify-content: space-between;
+  }
+  
+  #play {
+    width: 30px;
+    transition: transform 1s;
+    cursor: pointer;
+  }
+  
+  #play:hover {
+    transform: scale(1.4);
+  }
+  
+  #miranha {
+    height: calc((100vh - 6rem) * 90 / 100);
+    position: absolute;
+    right: -70px;
+    top: 80px;
+    animation: shake 4s infinite;
+  }
+  
+  #logoNome {
+    width: 222px;
+  }
+  
+  section {
+    width: 550px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("./img/aranha\ \(1\).png") no-repeat;
+    background-size: cover;
+    height: calc((100vh - 6rem) * 60 / 100);
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+  
+  .btn {
+    background-color: #f00;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px #ff0000;
+   
+  }
+
+.btn:hover{
+    animation: shake 2s infinite;
+}
+  
+#list{
+    width: 600px;
+    display: flex;
+    color: #fff;
+   text-align: center;
+
+}
